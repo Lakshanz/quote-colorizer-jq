@@ -1,0 +1,17 @@
+/** Fonts **/
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-display: 'Poiret One', cursive;
+
+$font-size-base: 14px !default;
+$font-size-large: ceil(($font-size-base * 1.5)) !default;
+$font-size-xl: ceil(($font-size-base * 2)) !default;
+$font-size-heading: ceil(($font-size-base * 5)) !default;
+
+/** Colors **/
+$bg-dark: #6d4298;
+$bg-light: #f3f3f3;
+$text-color-light: #FFF;
+$text-color-dark: #333;
+$input-placeholder-color: #dad8d8;
+$btn-primary-bg-light: #28A6CB;
+$btn-primary-bg-dark: #209abf;

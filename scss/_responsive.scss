@@ -1,0 +1,25 @@
+/** Optimize for mobile **/
+@media only screen and (max-width: 600px) {
+  .branding h1 {
+    font-size: 2em;
+  }
+
+  .quote-input{
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .quote-submit-btn{
+    font-size: 1em;
+    padding: 10px;
+  }
+
+  .quote-card{
+    font-size: 1em;
+    padding: 20px;
+  }
+
+  .quote-submit-btn{
+    width: 80%;
+  }
+}

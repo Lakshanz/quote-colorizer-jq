@@ -1,0 +1,142 @@
+
+/** Fonts **/
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-display: 'Poiret One', cursive;
+
+$font-size-base: 14px !default;
+$font-size-large: ceil(($font-size-base * 1.5)) !default;
+$font-size-xl: ceil(($font-size-base * 2)) !default;
+$font-size-heading: ceil(($font-size-base * 5)) !default;
+
+/** Colors **/
+$bg-dark: #6d4298;
+$bg-light: #f3f3f3;
+$text-color-light: #FFF;
+$text-color-dark: #333;
+$input-placeholder-color: #dad8d8;
+$btn-primary-bg-light: #28A6CB;
+$btn-primary-bg-dark: #209abf;
+
+
+html, body{
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-size: $font-size-base;
+  color: $text-color-light;
+  font-family: $font-family-sans-serif;
+}
+
+#cover-spin {
+  position:fixed;
+  width:100%;
+  left:0;right:0;top:0;bottom:0;
+  background-color: #FFF;
+  z-index:9999;
+
+  background-image: url(../img/loading.gif);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.container{
+  display: flex;
+  min-height: 100%;
+  align-items: center;
+  justify-content: center;
+
+  .page-wrap {
+    -webkit-box-flex: 0;
+    flex: none;
+    width: 80%;
+    max-width: 900px;
+  }
+}
+
+.control-area{
+  width: 100%;
+}
+
+.branding{
+  text-align: center;
+
+  h1{
+    font-family: $font-family-display;
+    margin: 20px 0;
+    font-size: $font-size-heading;
+    color: #2EDE94;
+    background: linear-gradient(to right, #FFF 0%, #2EDE94 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+.quote-input{
+  display: block;
+  padding: 20px;
+  font-size: $font-size-large;
+  background:rgba(255, 255, 255, 0.9);
+  width: 100%;
+  border: none;
+  border-radius: 40px;
+  text-align: center;
+
+  &::placeholder {
+    color: $input-placeholder-color;
+    opacity: 1; /* Firefox */
+  }
+
+  &::-ms-input-placeholder { /* Microsoft Edge */
+    color: $input-placeholder-color;
+  }  
+}
+
+.quote-input:focus, .quote-submit-btn:focus{
+  outline: none;
+}
+
+.btn-wrapper{
+  text-align: center;
+}
+
+#btn-loading{
+  display: none;
+}
+
+.quote-submit-btn{
+  display: inline-block;
+  width: 40%;
+  padding: 20px 40px;
+  background-color: $btn-primary-bg-light;
+  color: #FFF;
+  text-align: center;
+  border: none;
+  margin: 20px 0;
+  border-radius: 40px;
+  font-size: $font-size-large;
+  box-shadow: 0px 5px 5px rgba(0,0,0,0.2);
+  cursor: pointer;
+
+  &:hover{
+    background-color: $btn-primary-bg-dark;
+    transition:.3s;
+  }
+}
+
+.quote-card{
+  padding: 40px;
+  font-size: $font-size-xl;
+  font-weight: bold;
+  text-align: center;
+  background-color: #6d4298;
+  color: #FFF;
+  border-radius: 10px;
+  margin: 20px 0;
+  font-family: $font-family-display;
+
+}
+
+
+
+@import '_animations';
+@import '_responsive';
